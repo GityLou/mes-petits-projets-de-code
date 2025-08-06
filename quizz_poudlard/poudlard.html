@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Projet Choixpeau</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Mate+SC&display=swap" rel="stylesheet">
+  <title>Le Choixpeau de Poudlard</title>
+</head>
+  
+<body>
+  <div id="quiz-container">
+    <h1 id="titre">Bienvenue à Poudlard</h1>
+    <h2 id="sousTitre">Quelle maison le choixpeau va-t-il vous attribuer ?</h2>
+    <img id="imgCover" src="https://i.ibb.co/sRqw6XB/the-sorting-hat-of-hogwarts-its-an-old-talking-hat-hogwarts-core-Glitters-Bokeh-backlighting-Translu.webp">
+    <br><button id="entrer">Commencer</button>
+    <div id="question-container" class="hidden">
+      <div class="question">
+        <p>Ce premier trimestre, quelle spécialisation avez-vous choisi ? </p>
+        <label>
+          <input type="radio" name="answer" value="Gryffindor"> Le Quidditch
+        </label>
+        <label>
+          <input type="radio" name="answer" value="Hufflepuff"> Soins aux créatures magiques
+        </label>
+        <label>
+          <input type="radio" name="answer" value="Ravenclaw"> Etude des moldus
+        </label>
+        <label>
+          <input type="radio" name="answer" value="Slytherin"> Art de la Métamorphose
+        </label>
+      </div>
+    </div>
+    <button id="next-btn" onclick="nextQuestion()" class="hidden">Suivant</button>
+  </div>
+  <div id="result-container" style="display:none;">
+    <h2>Résultats</h2>
+    <p id="result-text"></p>
+    </div>
+  <p id="signature" class="signature">Codé avec amour par <a href="https://codepen.io/BambieLou">Bambie Lou</a></p>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
