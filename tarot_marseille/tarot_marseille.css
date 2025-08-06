@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&display=swap');
+
+body {
+  background-image: url(https://i.pinimg.com/564x/ab/60/bd/ab60bdfbe51bfae8b992ff211fbc226a.jpg);
+  background-position: cover;
+}
+
+.questionDiv {
+  padding: 20px;
+  text-align:center;
+  border-radius: 30px;
+  width: 80vw;
+  margin:20px auto;
+}
+
+h1 {  
+  animation : mysticFadeIn 1s ease-in-out;
+  text-align: center; 
+  color: #FFE5E5;
+  font-family: Protest Revolution;
+  font-size: 65px;
+  letter-spacing: 2.5px;
+  margin-bottom: -15px;
+  text-shadow: 5px 5px 10px #000;
+}
+
+div {
+ justify-content: space-evenly;
+  margin: 10px;
+} 
+
+.petitTexte {
+  color: #402B3A;
+  font-size: 20px;
+  letters-spacing: 2px; 
+  font-family: Caveat;
+  width: 300px; 
+  padding: 30px; 
+  box-shadow: 5px 5px 10px #332941;
+  border-radius: 20px; 
+  background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231)); 
+  animation : apparitionImage 0.5s ease-in-out;
+}
+
+/*Input by vinodjangid07*/
+.InputContainer {
+  animation : mysticFadeIn 1s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 610px;
+  height: 50px;
+  background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+  margin-right: 20px;
+}
+
+.input {
+  animation : mysticFadeIn 1s ease-in-out;
+  color: #7E2553;
+  font-family: Montserrat Alternates;
+  font-size: 18px;
+  width: 520px;
+  height: 40px;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+
+::placeholder {
+  color: #AC87C5;
+}
+
+/*Button by catraco*/
+.btn-class-name {
+  animation : mysticFadeIn 1s ease-in-out;
+  margin: 25px;
+  --primary: 255, 231, 231;
+  --secondary: 31, 0, 94;
+  width: 60px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  outline: 10px solid rgb(var(--primary), .5);
+  border-radius: 100%;
+  position: relative;
+  transition: .3s;
+}
+
+.btn-class-name .back {
+  background: rgb(var(--secondary));
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-class-name .front {
+  background: linear-gradient(0deg, rgba(var(--primary), .6) 20%, rgba(var(--primary)) 50%);
+  box-shadow: 0 .5em 1em -0.2em rgba(var(--secondary), .5);
+  border-radius: 100%;
+  position: absolute;
+  border: 1px solid rgb(var(--secondary));
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: inherit;
+  transform: translateY(-15%);
+  transition: .15s;
+  color: rgb(var(--secondary));
+}
+
+.btn-class-name:active .front {
+  transform: translateY(0%);
+  box-shadow: 0 0;
+}
+
+.resultat {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  height: 450px;
+  animation : mysticFadeIn 1s ease-in-out;
+  border-radius: 20px;
+  margin-right: 5px;
+  margin-top: 30px;
+}
+
+.carte {
+  position: relative;
+  display: inline-block;
+}
+
+.carte::before {
+  content: attr(data-description);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 231, 231);
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 20px;
+  font-family: Protest Revolution;
+  letter-spacing: 2px;
+  padding: 20px;
+  color: #402B3A;
+}
+
+.carte:hover::before {
+  opacity: 1;
+}
+
+.carte:hover { 
+ filter: brightness(90%);
+}
+
+#signature {
+  color : #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: Caveat;
+  text-align: right;
+  bottom: 0 ;
+  right: 20px;
+  text-shadow: 5px 5px 10px #E8C872;
+  margin-right: 30px;
+}
+
+a {
+  color: #E8C872;
+  text-decoration: none;
+}
+
+@keyframes apparitionImage {
+ 0% {
+    transform: translateY(20px) scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes mysticFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  
+ 
+  .InputContainer {
+    width: 300px;
+  }
+    div {
+    margin: center;
+  }
+  .input{
+    width: 260px;
+    font-size : 12px;
+  }
+  .btn-class-name {
+    width: 35px;
+    height: 30px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  img{
+    width:30vw;
+    height: auto;
+    margin-top: 20px; 
+  }
+  .carte::before {
+    font-size: 14px;
+    padding: 3px;
+    width: 80%;
+  }
+  #signature {
+    margin-right: 30px ;
+    font-size: 12px;
+    text-shadow: 5px 5px 5px black;
+  } 
+}
