@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChillZone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+  </head>
+
+  <div class="main-container">
+    <div class="app">
+  <!-- Fonds d'écran -->
+  <div class="backgrounds">
+    <img src="https://i.pinimg.com/1200x/f9/c5/cc/f9c5cc3239c1a8b98e06a3aadd7e3f2f.jpg" class="bg active" id="img-depart">
+    <img src="https://i.pinimg.com/736x/83/41/92/834192426fe7c0d56f3061a207eaa885.jpg" class="bg" id="bg-citron">
+    <img src="https://i.pinimg.com/736x/31/ee/30/31ee3027f5a0d10f637c814056ff2f38.jpg" class="bg" id="bg-myrtilles">
+    <img src="https://i.pinimg.com/736x/d2/90/7b/d2907b3b9eed732491f6149aede3eb90.jpg" class="bg" id="bg-pasteque">
+    <img src="https://i.pinimg.com/736x/66/ce/ba/66cebad01878d7b21b283f9ed3d1fa5f.jpg" class="bg" id="bg-croissant"> 
+    <img src="https://i.pinimg.com/1200x/fb/e3/8a/fbe38aed5cc4311c2e421f367e8121d5.jpg" class="bg" id="bg-kiwi">
+    <img src="https://i.pinimg.com/736x/78/0d/ac/780dac6d4b504d6b33c39f840ca062f9.jpg" class="bg" id="bg-pomme">
+  </div>
+
+<div class="card">
+  <!-- Logo image -->
+  <img src="https://github.com/GityLou/Overlays/blob/main/chillzone%20titre.png?raw=true" alt="ChillZone Logo" class="logo">
+
+   <!-- Pomodoro + Play -->
+  <div class="pomodoro-card">
+    <div class="timer">
+      <span id="minutes">01</span>:<span id="seconds">00</span>
+    </div>
+    <button id="start-play">▶️ PLAY</button>
+  </div>
+  
+  <!-- Consigne 1 -->
+  <p class="subtitle">Choisis ton ambiance</p>
+  
+  <!-- Boutons fruits -->
+  <div class="container">
+    <button data-bg="citron">🍋 Citron</button>
+    <button data-bg="myrtilles">🫐 Myrtilles</button>
+    <button data-bg="pasteque">🍉 Pastèque</button>
+    <button data-bg="croissant">🥐 Croissant</button>
+    <button data-bg="kiwi">🥝 Kiwi</button>
+    <button data-bg="pomme">🍎 Pomme</button>
+  </div>
+
+  <!-- Consigne 1 -->
+  <p class="subtitle">Et détends toi une minute</p>
+
+  <!-- Audio -->
+  <audio id="bg-music" loop>
+    <source src="https://github.com/GityLou/musiques/raw/refs/heads/main/SUNO/lofi_bitterSweetEchoes.mp3" type="audio/mp3">
+  </audio>
+</div>
+  
+  <div id="popup-fin" class="popup hidden">
+  <div class="popup-content">
+    <h2>✨ Félicitations ✨</h2>
+    <p> Chill Zone terminée <br> Bravo pour ta patience </p>
+    <button id="fermer-popup">Fermer</button>
+  </div>
+
+<audio id="popup-sound">
+  <source src="https://github.com/GityLou/musiques/raw/refs/heads/main/SFX/clearUI_notification_soun.mp3" type="audio/mp3">
+</audio>
+    
+    </div>
+  </div>
+    
+    
+   <footer class="footer">
+      <p>©2025 - codé avec amour par <a href="https://codepen.io/BambieLou">Bambie Lou</a></p>
+    </footer>
+    
+</body>
