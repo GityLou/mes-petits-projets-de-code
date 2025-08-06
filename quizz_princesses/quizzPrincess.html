@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Quizz princesse pour Nine</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Great+Vibes&family=Ruthie&display=swap" rel="stylesheet">
+
+  <title>Quizz princesse pour Nine</title>
+</head>
+  
+  
+<body>
+  <div id="accueil">
+  <div id="pageAccueil">
+    <img id ="imgAccueil" src="https://i.ibb.co/WfJRzfF/a46ddeb965d8d85c005895c69b02ec9e.jpg">
+  
+    <p id="txtAccueil"><span class="maj">O</span>rpheline depuis toujours, <br>l'oracle des Horizons vous annonce que vous êtes une princesse.<br> Vous avez perdu la mémoire. <br>Faites ce test pour savoir de quel royaume vous venez. <br><br><span class="petitTxt">Le royaume : Celeste , Sylvestre, Astrale, des Charmes ou des Songes ?
+      </span></p>
+   <button id="btnEntrer">Commencez</button>
+  </div>  
+  </div>
+  
+  <div id="fenetreDiv" style="display:none;">
+    <img id="imgCover" src="https://i.pinimg.com/564x/44/c2/17/44c217885c6c009b54f5ee203f8563ee.jpg">
+    <div id="questionDiv" class="questionDiv">
+       <p class="questionTitre"> Vous vous reveillez... </p>
+      <hr>
+        <label>
+          <input type="radio" name="reponse" class="input" value="astral"> Au Collegium Palace
+        </label>
+        <label>
+          <input type="radio" name="reponse" class="input" value="celeste"> Au Palais de Luxor
+        </label>
+        <label>
+          <input type="radio" name="reponse" class="input" value="charmes"> Aux bordures de l'Enchantaria
+        </label>
+        <label>
+          <input type="radio" name="reponse" class="input" value="sylvestre"> Au Pavillon Royal 
+        </label>
+        <label>
+          <input type="radio" name="reponse" class="input" value="ombres"> Au Manoir des Noctalis
+        </label>
+      </div>
+    
+    <div id="resultatDiv" style="display:none;" class="resultatStyle">
+        <div class="resultatDivHero">
+        <h2 id="resultatTitre">Résultats</h2>
+        <img id="femme" class="femme" src="">
+        </div>
+        <p id="resultatTxt"></p>
+      <img id="trophee" class="trophee" src="">
+    </div>
+      
+    <button id="btnSuivant" class="btnSuivant" onclick="prochaineQuestion()" style="display:none;">Suivant</button>
+
+  <p id="signature" class="signature" style="display:none;">Codé avec amour par <a href="https://codepen.io/BambieLou">Bambie Lou</a></p>
+<script defer src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
