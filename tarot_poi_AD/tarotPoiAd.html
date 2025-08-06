@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>tarot POI AD </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oracle Poi AD</title>
+  <link rel="stylesheet" href="poiAD.css" />
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="homepage" class="container">
+    <h1>L'Oracle Poi AD</h1>
+   <div class="logo-circle">
+    <img src="https://i.pinimg.com/736x/23/28/4a/23284a7917ae14726c592475712a2591.jpg" alt="Logo Oracle Poi AD">
+  </div>
+    <p>Bienvenue ! Posez votre question et tirez une carte pour découvrir votre lecture d'oracle.</p>
+    <button id="startGameBtn">Commencer</button>
+  </div>
+
+  <div id="gameInterface" class="container" style="display:none;">
+    <h2>L'oracle des jongleurs</h2>
+    <form id="questionForm">
+      <input type="text" id="questionInput" placeholder="Écrivez votre question..." required />
+      <button type="submit" id="drawBtn">Tirer une carte</button>
+    </form>
+
+    <!-- Ici la div qui contiendra la carte tirée -->
+    <div id="cardsDisplay" class="cards"></div>
+    <div class="button-group" id="afterCardButtons">
+  <button id="restartBtn" style="display:none;">Recommencer</button>
+</div>
+  </div>
+  
+<div id="gallery" class="container" style="display:none;">
+  <h2>Galerie des Cartes</h2>
+  <div class="gallery-grid" id="galleryGrid"></div>
+  <button id="backToGameBtn" class="gallery-btn">Retour à l'oracle</button>
+</div>
+<div id="cardOverlay" style="display:none;"></div>
+  
+
+<footer class="signature">
+  © 2025 - Codé avec amour par <a href="https://codepen.io/BambieLou"> Bambie Lou</a>
+</footer>
+
+  <script src="poiAD.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
